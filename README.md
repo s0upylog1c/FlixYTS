@@ -1,9 +1,9 @@
 # FlixYTS
-Android app that discover, search and download torrents, built in Kotlin, powered by YTS Api.
+Android app that discover, search and download torrents, built in Kotlin, powered by [YTS Api](https://yts.mx/api)
 
 ## Features
- - Movie Catalogue fetched from IMDB
- - Search Interface for movies with Retrofit 
+ - Movie Catalogue fetched from IMDB with [Jsoup](https://jsoup.org/)
+ - Search Interface for movies with [Retrofit](https://github.com/square/retrofit)
  - Download torrents of movies 
  - Shows Downloaded Movies
  - Inbuilt Video Player for local files
