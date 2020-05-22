@@ -12,3 +12,18 @@ Android app that discover, search and download torrents, built in Kotlin, powere
  ## TODO 
   - Add movies to My List
   - Implement youtube view with Movie details
+  
+## Snapshots
+### Navigation
+<a href="url"><img src="/Home.jpg.jpg" align="center"  width="250" ></a>
+<a href="url"><img src="/Search.jpg.jpg" align="center"  width="250" ></a>
+<a href="url"><img src="/Downloads.jpg" align="center"  width="250" ></a>
+
+### Movie Details
+<a href="url"><img src="/Movie_details.jpg" align="center"  width="250" ></a>
+
+### Video Player
+<a href="url"><img src="/Video Player.jpg" align="center"  width="600" ></a>
+
+### Gesture Recognition
+<a href="url"><img src="/Gesture Recognition.jpg" margin-top="10" align="center"  width="600" ></a>
