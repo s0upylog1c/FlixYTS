@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/top_drama_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#dddddd"
+        android:textSize="20sp"
+        android:text="Best Dramas of 2019"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/top_drama_list"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="6dp"
+        app:reverseLayout="true"
+        android:layout_below="@id/top_drama_list_title"
+        android:background="#171717"
+        />
+    <TextView
+        android:id="@+id/top_horror_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/top_drama_list"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#dddddd"
+        android:textSize="20sp"
+        android:text="All Time Horrors"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/top_horror_list"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="6dp"
+        app:reverseLayout="true"
+        android:layout_below="@id/top_horror_list_title"
+        android:background="#171717"
+        />
+
+    <TextView
+        android:id="@+id/top_book_based_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/top_horror_list"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#dddddd"
+        android:textSize="20sp"
+        android:text="On Virus Outbreak"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/top_book_based_list"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="6dp"
+        app:reverseLayout="true"
+        android:layout_below="@id/top_book_based_list_title"
+        android:background="#171717"
+        />
+    <TextView
+        android:id="@+id/top_rated_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/top_book_based_list"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textColor="#dddddd"
+        android:textSize="20sp"
+        android:text="Must Watch Before You Die"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/top_rated_list"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:orientation="horizontal"
+        android:layout_marginVertical="6dp"
+        android:layout_below="@id/top_rated_list_title"
+        android:background="#171717"
+        />
+</RelativeLayout>

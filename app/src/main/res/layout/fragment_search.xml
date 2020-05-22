@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home.HomeFragment"
+    android:background="#121212"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="90dp"
+        android:elevation="4dp"
+        android:layout_below="@id/searchCard"
+         />
+
+    <RelativeLayout
+        android:id="@+id/searchCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/search_card"
+        android:paddingTop="4dp"
+        android:paddingBottom="10dp"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/searchView"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="2dp"
+            app:cardBackgroundColor="#121212"
+            app:cardCornerRadius="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toLeftOf="@id/searchIcon"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Search for a movie..."
+                    android:inputType="textPersonName"
+                    android:textColor="#999999"
+                    android:textColorHint="#777777"
+                    tools:ignore="Autofill,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="10dp"
+                    android:foreground="@drawable/searchbuttonbackground" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/genre_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="#121212"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <Spinner
+                android:id="@+id/genre"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            app:cardBackgroundColor="#121212"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp">
+
+            <Spinner
+                android:id="@+id/ratings"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="10dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/searchButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genre_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="SEARCH"
+            android:textColor="#DDDDDD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#99bb86fc"
+            app:cornerRadius="30dp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/searchCard"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

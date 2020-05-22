@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="2dp"
+    android:elevation="1dp"
+    app:cardBackgroundColor="#121212"
+    app:cardCornerRadius="20dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/material_card"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="#121212"
+        android:padding="5dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="1dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#010101">
+
+
+            <RelativeLayout
+                android:id="@+id/text_container"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/image_container"
+                android:background="#77CBA9F4">
+
+
+                <TextView
+                    android:id="@+id/movie_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tick"
+                    android:layout_alignBottom="@id/rating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="0000"
+                    android:textColor="#D2C0E8"
+                    android:textSize="12sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="120dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toLeftOf="@id/tick"
+                    android:background="@drawable/ic_youtube" />
+
+                <ImageView
+                    android:id="@+id/imdb"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toLeftOf="@id/youtube"
+                    android:background="@drawable/ic_imdb" />
+
+                <ImageView
+                    android:id="@+id/tick"
+                    android:layout_width="33dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/ic_tick_disabled" />
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignLeft="@id/imdb"
+                    android:layout_alignBottom="@id/rating"
+                    app:srcCompat="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/star"
+                    android:text="0.0"
+                    android:textColor="#FFC850"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="15dp"
+                android:background="#1f1a24"
+                android:elevation="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/image_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/name_container"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="5dp"
+                    android:elevation="4dp"
+                    app:cardBackgroundColor="#010101"
+                    app:cardCornerRadius="8dp">
+
+                    <TextView
+                        android:id="@+id/movie_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="4dp"
+                        android:singleLine="true"
+                        android:text="Movie Name"
+                        android:textColor="#cdcdcd"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</com.google.android.material.card.MaterialCardView>

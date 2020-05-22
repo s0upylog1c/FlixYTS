@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#010101"
+    tools:context=".Player.PlayerActivity">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <TextView
+        android:id="@+id/left_visuals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="serif-monospace"
+        android:text="+10s"
+        android:textColor="#dddddd"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/center_visuals"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="#44777777"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="+10 sec"
+        android:textColor="#dddddddd"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/right_visuals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttons"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="serif-monospace"
+        android:text="+10s"
+        android:textColor="#dddddd"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#11CBA9F4">
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/seekBar"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:text="0:00"
+            android:textColor="#aa03DAC5"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="720dp"
+            android:layout_height="14dp"
+            android:layout_below="@id/currentTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/seekBar"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:text="0:00:00"
+            android:textColor="#aa03DAC5"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/pauseButton"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/ic_pause" />
+
+        <TextView
+            android:id="@+id/sizes"
+            android:layout_width="50dp"
+            android:layout_height="44dp"
+            android:layout_below="@id/seekBar"
+            android:layout_alignEnd="@id/seekBar"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/ic_size"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="#dddddd"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
